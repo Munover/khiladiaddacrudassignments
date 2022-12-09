@@ -1,0 +1,27 @@
+.background{
+    background-color: rgb(20, 47, 128);
+}
+.heading{
+    text-align: center;
+    color: white;
+    background-color: rgb(20, 47, 128);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.mybtn{
+    color: white;
+    background-color: rgb(20, 47, 128);
+    padding: 6px;
+    width: 100%;
+}
+
+.mytable{
+    height: 350px;
+    overflow: auto;
+}
+
+.icon{
+    color: white;
+}

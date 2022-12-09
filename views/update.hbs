@@ -1,0 +1,18 @@
+{{>header}}
+    <title>KHILADI ADDA CRUD ASSIGNMENT | Add Records</title>
+{{>navbar}}
+<div class="container">
+    <h4 class="heading">Update Records</h4>
+<form class="midsection" method="post" action="/update/{{data._id}}">
+  <div class="mb-3">
+    <label class="form-label">Name</label>
+    <input type="text" class="form-control" name="name" placeholder="Enter Name" value="{{data.name}}">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Mobile Number</label>
+    <input type="text" class="form-control" name="phone" placeholder="Enter Mobile Number" value="{{data.phone}}">
+  </div>
+  <button type="submit" class="mybtn">Update</button>
+</form>
+</div>
+{{>footer}}

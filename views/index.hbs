@@ -1,0 +1,31 @@
+{{>header}}
+<title>KHILADI ADDA CRUD ASSIGNMENT | Home</title>
+{{>navbar}}
+<div class="container">
+    <h4 class="heading">CRUD Application <a href="/add"><i class="fa fa-plus icon"></i></a></h4>
+    <div class="midsection">
+        <div class="table-responsive">
+            <table class="table">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Mobile Number</th>
+                    <th>User Picture</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                {{#each data}}
+                <tr>
+                    <td>{{_id}}</td>
+                    <td>{{name}}</td>
+                    <td>{{phone}}</td>
+                    <td></td>
+                    <td><a href='/update/{{_id}}'><span class="material-symbols-outlined">edit</span></a></td>
+                    <td><a href='/delete/{{_id}}'><span class="material-symbols-outlined">delete_forever</span></a></td>
+                </tr>
+                {{/each}}
+            </table>
+        </div>
+    </div>
+</div>
+{{>footer}}
